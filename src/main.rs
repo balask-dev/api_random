@@ -3,9 +3,9 @@ use reqwest::header::USER_AGENT;
 use reqwest::Error;
 use std::env;
 
-#[derive(Debug,Serialize,Deserialize)]
+#[derive(Serialize,Deserialize)]
 pub struct User{
-    userId: u32,
+    user_id: u32,
     id: u32,
     title: String,
     completed: bool,
